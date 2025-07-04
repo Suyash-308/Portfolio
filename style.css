@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+:root{
+    --bg-color:#e5e5e5;
+    --text-color:#3d3d3d;
+    --primary-color:#fbd144;
+    --theme-btn-bg:#fff;
+    --common-padding:0 12vw;
+    font-size: 16px;
+}
+:root.dark{
+    --bg-color: #0c151d;
+    --text-color: #fff;
+}
+body{
+    background-color:var(--bg-color) ;
+    color: var(--text-color);
+    font-family: sans-serif;
+}
+
+/* --------------------------------Theme-section -start -------------------------------- */
+.theme{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    cursor: pointer;
+}
+.theme i{
+    background-color:var(--theme-btn-bg);
+    color: var(--text-color);
+    border-radius: 50%;
+    padding: .5rem;
+}
+/* --------------------------------Theme-section -end -------------------------------- */ 
+
+
+/* --------------------------------main-section -start -------------------------------- */ 
+.self-intro{
+    display: flex;
+    justify-content:center ;
+    padding: var(--common-padding);
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    gap: 2rem;
+}
+
+.self-intro .image-info {
+  width: 13rem;
+  height: 13rem;
+  border: 0.3rem solid var(--primary-color);
+  border-radius: 50%;
+}
+.self-intro .image-info img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius:50% ;
+} 
+.self-intro .personal-info{
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    gap: 0.7rem;
+}
+.personal-info p:first-child{
+    font-size: 3rem;
+}
+.personal-info p:nth-child(2){
+    font-size: 1.5rem;
+}
+.personal-info ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.personal-info ul li a{
+    color: var(--text-color);
+    font-size: 1.7rem;
+}
+
+/* --------------------------------main-section -end -------------------------------- */ 
+
+
+/* --------------------------------contact-section -start -------------------------------- */ 
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+.contact a{
+    padding: 1rem 4rem;
+    background-color: var(--theme-btn-bg);
+    color: var(--text-color);
+    border-radius: .5rem;
+    text-decoration: none;
+}
+.contact a:first-child{
+    background-color: var(--primary-color);
+    color: #0c151d;
+} 
+/* --------------------------------contact-section -end -------------------------------- */ 
+
+
+/* -------------------------------- responsive -start -------------------------------- */ 
+
+@media (max-width: 768px){
+:root{font-size:16px;
+}
+.self-intro{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.self-intro .personal-info{
+    width: 100%;
+    align-items: center;
+    font-size: 2rem;
+}
+}
+/* -------------------------------- responsive -end -------------------------------- */ 
+
+
+
+/* -------------------------------- option-button -start -------------------------------- */ 
+.btn-container{
+    display: flex;
+   justify-content: center;   
+   align-items: center;
+   gap: 5rem;
+   padding: 2rem 0; 
+  
+}
+.btn-container button{
+    padding: 1rem 7rem;
+    background-color: var(--theme-btn-bg);
+    color: var(--text-color);
+    border-radius: .5rem;
+    border: none;
+    
+}
+.btn-container button:first-child{
+    background-color: #00000033;
+}
+/* -------------------------------- option-button -start -------------------------------- */ 
+
+
+ .projects-div{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,18rem);
+    grid-template-rows: repeat(3,12rem);
+    gap: 1rem; 
+    grid-auto-rows: 12rem ;
+}
+.content .child  img{
+   height: 12rem;
+   width: 18rem;
+   border-radius: .7rem; 
+} 
+#skills-div {
+    margin: 0 auto;
+    background-color:rgb(181, 231, 231);
+    width: fit-content;
+    padding: 0 12vw;
+
+}
+.hidden-content{
+    display: none;
+}
