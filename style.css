@@ -14,7 +14,7 @@
 }
 :root.dark{
     --bg-color: #0c151d;
-    --text-color: #fff;
+    --text-color: #d1a6a6;
 }
 body{
     background-color:var(--bg-color) ;
@@ -138,20 +138,18 @@ body{
    align-items: center;
    gap: 5rem;
    padding: 2rem 0; 
-  
 }
 .btn-container button{
     padding: 1rem 7rem;
     background-color: var(--theme-btn-bg);
     color: var(--text-color);
     border-radius: .5rem;
-    border: none;
-    
+    border: none;   
 }
 .btn-container button:first-child{
     background-color: #00000033;
 }
-/* -------------------------------- option-button -start -------------------------------- */ 
+
 
 
  .projects-div{
@@ -174,6 +172,11 @@ body{
     padding: 0 12vw;
 
 }
+
+
+
+
+
 .hidden-content{
     display: none;
 }
