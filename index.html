@@ -1,105 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suyash Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
+
 <body>
 
-
-  <div class="theme"  onclick="toggleTheme()"> 
-  <i class="fa-solid fa-moon"></i> </div>
-  <!-- <i class="fa-solid fa-sun"></i> -->
-
-<!--  -->
-<main>
-  <div class="self-intro">
-    <div class="image-info">
-      <img src="1751349059807.jpg" alt="suyash image" >
-    </div>
-
-    <div class="personal-info">
-      <p>Suyash Nichit</p>
-      <p>Software Engineer</p>
-      <ul class="links">
-        <li>
-          <a href="https://github.com/Suyash-308"> 
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/suyash-nichit-b4559b349/">
-            <i class="fa-brands fa-linkedin"></i>
-          </a> 
-        </li>
-      </ul>
-    </div>
+  <!-- Theme Toggle -->
+  <div class="theme" onclick="toggleTheme()">
+    <i class="fa-solid fa-moon" id="theme-icon"></i>
   </div>
-</main>
 
+  <!-- Main Intro Section -->
+  <main class="hero">
+    <div class="self-intro">
 
+      <!-- Profile Image -->
+      <div class="image-info">
+        <img src="Profile.jpg" alt="Suyash Image">
+      </div>
+
+      <!-- Personal Info -->
+      <div class="personal-info">
+        <p class="name">Suyash Nichit</p>
+        <p class="role">Software Engineer</p>
+
+        <!-- Social Links -->
+        <ul class="links">
+          <li>
+            <a href="https://github.com/Suyash-308" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/suyash-nichit-b4559b349/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Contact Buttons -->
   <div class="contact">
-    <a href="91 CSS Interview Question.pdff" download>
+    <a href="Suyash_Nichit_Full_Stack_Web_Developer.pdf" download>
       Download CV <i class="fa-solid fa-download"></i>
     </a>
-     
+
     <a href="mailto:nichitsuyash@gmail.com">
-      Contact me  <i class="fa-solid fa-envelope"></i>
+      Contact me <i class="fa-solid fa-envelope"></i>
     </a>
   </div>
 
-<section>
-  <div class="btn-container">
-    <button onclick="displayProjects()" id="projects-btn">Projects</button>
-    <button onclick="displaySkills()" id="skills-btn">Skillls</button>
-   
-  </div>
+  <!-- Project & Skills Section -->
+  <section class="section">
 
+    <!-- Toggle Buttons -->
+    <div class="btn-container">
+      <button onclick="displayProjects()" id="projects-btn">Projects</button>
+      <button onclick="displaySkills()" id="skills-btn">Skills</button>
+    </div>
 
-  <div class="content ">
-    <div class="projects-div"  id="projects-div">
-        <div class="child"><img src="Screenshot 2025-07-01 172247.png" alt="cetificate"></div>
-        <div class="child"><img src="Screenshot 2025-07-01 172247.png" alt="cetificate"></div>
-        <div class="child"><img src="Screenshot 2025-07-01 172247.png" alt="cetificate"></div>
+    <div class="content">
 
-         
-     </div> 
+      <!-- PROJECT SECTION -->
+       <div class="projects-div" id="projects-div">
 
-     <div class="hidden-content" id="skills-div">
+  <a href="https://test-vibes.vercel.app" class="project-card">
+    <img src="TestWibes.png" alt="project">
+    <h3>TestWibes</h3>
+    <p>A delicious food menu interface showcasing dishes, prices, categories, and smooth UI animations.</p>
+  </a>
+
+  <a href="https://suyash-308.github.io/Career-AI/" class="project-card">
+    <img src="CreerAI.png" alt="project">
+    <h3>Career AI</h3>
+    <p>Career guidance system using skill analysis and suggestions.</p>
+  </a>
+
+  <a href="https://suyash-308.github.io/Login-form/" class="project-card">
+    <img src="LogIn.png" alt="project">
+    <h3>Login Auth System</h3>
+    <p>Secure login page with validation and responsive UI.</p>
+  </a>
+
+  <a href="https://suyash-308.github.io/Zerodha/" class="project-card">
+    <img src="Zerodha.png" alt="project">
+    <h3>Zerodha UI Clone</h3>
+    <p>Pixel-perfect clone of Zerodha Landing Page.</p>
+  </a>
+
+  <a href="https://suyash-308.github.io/Class-IQ/" class="project-card">
+    <img src="ClassIQ.png" alt="project">
+    <h3>ClassIQ</h3>
+    <p>Student portal with class management & progress tracking.</p>
+  </a>
+
+  <a href="https://suyash-308.github.io/Linux-journey/" class="project-card">
+    <img src="LinuxJourney.png" alt="project">
+    <h3>Linux Journey</h3>
+    <p>Educational UI design explaining Linux basics visually.</p>
+  </a>
+
+</div>
+
+      </div>
+
+      <!-- SKILLS SECTION -->
+      <div class="hidden-content" id="skills-div">
+
         <ol>
-          <li>
-            Frontend  Skills
-         
+          <li><strong>Frontend Skills</strong>
             <ul>
-              <li>
-                 Hyper Text Markup Language (HTML)
-              </li>
-              <li>
-                Cascading Style Sheet (CSS)
-              </li>
-              <li>
-                JavaScript(JS)
-              </li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
             </ul>
           </li>
-          <li>
-            Backend
+
+          <br>
+
+          <li><strong>Backend Skills</strong>
             <ul>
-              <li>
-                Core Java
-              </li>
+              <li>Core Java</li>
+              <li>Advanced Java</li>
+              <li>Hibernate</li>
+              <li>Spring Boot</li>
+              <li>MySQL</li>
             </ul>
           </li>
-          <li>
-            Soft Skills
+
+          <br>
+
+          <li><strong>Soft Skills</strong>
             <ul>
               <li>Problem Solving</li>
               <li>Team Collaboration</li>
@@ -107,30 +158,15 @@
               <li>Time Management</li>
             </ul>
           </li>
-        </ol>    
-     
-     </div>
-  </div>
+        </ol>
 
-</section>
+      </div>
+    </div>
 
+  </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
+  <!-- JavaScript -->
   <script src="main.js"></script>
+
 </body>
 </html>
